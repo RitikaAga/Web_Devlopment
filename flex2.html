@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>example of flex</title>
+</head>
+<style>
+div
+{
+width:150px;
+height:150px;
+background-color:grey;
+animation-name:ritika;
+animation-duration:15s;
+position:relative;
+animation-timing:5s;
+animation-direction:alternate;
+animation-delay:2s;
+animation-iteration-count:2;
+}
+.flexc
+{
+display:inline-flex;
+width:200px;
+height:200px;
+margin:20px;
+background-color:blue;
+}
+.flexi
+{
+width:10px;
+height:10px;
+margin:10px;
+background-color:red;
+justify-content:center;
+}
+.flexd
+{
+
+width:10px;
+height:10px;
+margin:5px;
+background-color:yellow;
+justify-content:center;
+}
+h1
+{
+color:lightgreen;
+font-style:italic;
+text-decoration:underline;
+text-transformation:lowercase;
+}
+p
+{
+color:darkgreen;
+font-style:italic;
+text-decoration:line-through;
+text-transformation:upercase;
+}
+
+@keyframes ritika
+{
+0% {background-image:url("C:/Users/Public/Pictures/Sample Pictures/Chrysanthemum.jpg"); left:0px; top:0px;}
+30% {background-color:green; left:0px; top:100px;}
+60% {background-color:purple; left:100px; top:0px;}
+85% {background-color:pink; left:250px; top:250px;}
+100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+<body>
+<div><h1>HTML</h1>
+<p>html is a language</p><div class="flexc"></div>
+<div class="flexi"><div class="flexd"></div></div></div></body>
+</html>
+
+ 

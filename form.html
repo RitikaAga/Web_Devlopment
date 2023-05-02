@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var valid=false;
+var a= document.getElementById("text1");
+var b= document.getElementById("text2");
+var c= document.getElementById("text3");
+var d= document.getElementById("text4");
+var e= document.getElementById("text5");
+if(a.value=="")
+{
+alert("please fill the text field");
+document.getElementById("text1").focus();
+valid=false;
+}
+else if(b.value=="")
+{
+alert("please fill the text field");
+document.getElementById("text2").focus();
+valid=false;
+}
+else if(c.value=="")
+{
+alert("please fill the text field");
+document.getElementById("text3").focus();
+valid=false;
+}
+else if(d.value=="")
+{
+alert("please fill the text field");
+document.getElementById("text4").focus();
+valid=false;
+}
+else if(e.value=="")
+{
+alert("please fill the text field");
+document.getElementById("text5").focus();
+valid=false;
+}
+else
+{
+valid=true;
+}
+return valid;
+}
+</script>
+</head>
+<body>
+<form>
+<table>
+<tr><td>name:</td><td><input type="text" name="name" id="text1" ></td></tr><br>
+<tr><td>email:</td><td><input type ="text" name="email" id="text2"></td></tr><br>
+<tr><td>branch:</td><td><input type="text" name ="branch" id="text3"></td></tr><br>
+<tr><td>address:</td><td><textarea  name ="address" id="text4" rows="10"colums="10"></textarea></td></tr><br>
+<tr><td>dob:</td><td><input type="date" name="dob" id="text5" ></td></tr><br>
+<tr><td><input type="button" value="submit" onclick="return validate()"></td></tr><br>
+<tr><td><input type="reset"value="reset"></td></tr><br>
+</table>
+</form>
+</body>
+</html>

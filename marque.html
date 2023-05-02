@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlms="http://www.w3.org/1999/html">
+<head>
+<title>java script marquee tag</title>
+</head>
+<body>
+<h3>HTML MARQUE</h3>
+<marquee behavior="alternate" scrolldelay="100" ><marquee width="100">
+<h5 style="color:red; font-weight:bold; font-size:large;">c sharp corner</h5>
+</marquee></marquee>
+<h3>Java Script Marquee</h3>
+<p id="wordscroller" style="color:blue; font-weight:normal; font-size:x-large"></p>
+<script type="text/javascript">
+function scroll(pos)
+{
+	var txt="C-sharpcorner";
+	var output="";
+	var screen=document.getElementById("wordscroller");
+	for(var i=0;i<pos;i++)
+	{
+		output +=txt.charAt(i);
+	}
+	output +=txt.charAt(pos);
+	screen.innerHTML=output;
+	pos++;
+	if(Pos!=txt.length)
+	{
+		window.setTimeout(function() { scroll(pos); }, 200);
+		}
+		else
+		{
+			window.setTimeout(function() { scroll(0);},5000);
+		}
+	}
+	scroll(0);
+	</script></body></html>
